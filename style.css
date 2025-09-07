@@ -1,0 +1,254 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2f;
+    color: #e0e0e0;
+    line-height: 1.5;
+  }
+  .resume-container {
+    display: flex;
+    max-width: 1200px; /* Increased width */
+    margin: 40px auto;
+    background: #2c2c44;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  }
+  /* Left Panel */
+  .left-panel {
+    background: #3f3f5c;
+    width: 350px; /* widened left panel a bit */
+    padding: 30px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #4a90e2;
+    object-fit: cover;
+    box-shadow: 0 0 15px #4a90e2cc;
+  }
+  .name {
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #4a90e2;
+  }
+  .title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #a8c3f0;
+  }
+  .social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Center align icons horizontally */
+  align-items: center; /* Center align icons vertically if needed */
+}
+
+.social-icons a {
+  color: #a8c3f0;
+  font-size: 1.9rem;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Optional: rounded outline */
+  padding: 4px; /* Optional: spacing for outline */
+}
+
+.social-icons a:hover {
+  color: #4a90e2;
+  transform: scale(1.3); /* Increase size on hover */
+  box-shadow: 0 0 0 2px #4a90e2; /* Outline effect */
+}
+
+
+  /* Right Panel */
+  .right-panel {
+    flex-grow: 1;
+    padding: 35px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  /* Section Headings */
+  .section-heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    border-bottom: 3px solid #4a90e2;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    color: #4a90e2;
+  }
+  /* General List Styles */
+  ul {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+  li {
+    margin-bottom: 12px;
+  }
+  /* Skills Section */
+  .skills-category {
+    margin-bottom: 25px;
+  }
+  .skills-category h3 {
+    color: #4a90e2;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .skill-item {
+    display: flex;
+    align-items: center;
+    background: #3f3f5c;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    cursor: default;
+    min-width: 140px;
+  }
+  .skill-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  .skill-item:hover {
+    background: #5367b3;
+  }
+  /* Projects List */
+  ul.projects-list {
+    padding: 0;
+  }
+  ul.projects-list li {
+    background: #3f3f5c;
+    padding: 14px 20px;
+    border-left: 6px solid #4a90e2;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: default;
+    transition: background 0.3s ease;
+  }
+  ul.projects-list li:hover {
+    background: #5367b3;
+  }
+  /* Deployed Projects Links */
+  ul.deployed-projects {
+    padding: 0;
+  }
+  ul.deployed-projects li a {
+    color: #a8c3f0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+  ul.deployed-projects li a:hover,
+  ul.deployed-projects li a:focus {
+    color: #4a90e2;
+    border-bottom-color: #4a90e2;
+  }
+  /* Hobbies */
+  .hobby {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  .hobby i,
+  .hobby svg {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    min-width: 24px;
+    text-align: center;
+  }
+  .hobby strong {
+    color: #4a90e2;
+  }
+  .hobby p {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #c5d1f9;
+  }
+  /* 3D House container */
+  #house3d {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #111e3c;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px #4a90e2aa;
+    overflow: hidden;
+  }
+
+  /* Pseudo-element background image ke liye */
+  #house3d::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Nk house design.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* blur ki intensity yahan adjust karein */
+    z-index: 0; /* background layer peeche rakhen */
+  }
+
+  /* Main content (house_design image) */
+  #house3d .house_design {
+    position: relative; /* taaki overlay ke upar rahe */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    z-index: 1; /* foreground me rahega */
+  }
+
+  /* Responsive */
+  @media (max-width: 950px) {
+    .resume-container {
+      flex-direction: column;
+      margin: 20px;
+    }
+    .left-panel {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 15px;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-width: 3px;
+    }
+    .right-panel {
+      padding: 20px 15px;
+      gap: 25px;
+    }
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  }
